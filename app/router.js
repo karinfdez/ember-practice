@@ -12,6 +12,9 @@ Router.map(function() {
   });
   this.route('page-not-found',{path: '/*wildcard'});
   this.route('students', {path: '/students/:student_id'});
+  this.route('schools', function() {
+    this.route('students');
+  });
 });
 
 export default Router;
