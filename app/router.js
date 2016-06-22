@@ -15,6 +15,8 @@ Router.map(function() {
   this.route('schools', function() {
     this.route('students');
   });
+  this.route('persons');
+  this.route('teachers');
 });
 
 export default Router;

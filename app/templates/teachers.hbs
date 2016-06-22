@@ -1,0 +1,20 @@
+	<h3>This is the Teachers'route</h3>
+
+	<p>Using the beforeModel method on the persons.js route,
+	when typing persons on my route, I'm been redirected to
+	teachers route before the model is loaded.</p>
+	
+	beforeModel(){ <br>
+		this.transitionTo('teachers');<br>
+	}
+
+	OR 
+
+	<p>Using the afterModel method on the persons.js route,
+	when typing persons on my route, I'm been redirected to
+	teachers route after the model is loaded.</p>
+	
+	afterModel(){ <br>
+		this.transitionTo('teachers');<br>
+	}
+{{outlet}}
