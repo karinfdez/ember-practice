@@ -1,0 +1,5 @@
+	<h1>List of students</h1>
+{{#each model as |student|}}
+	{{#link-to 'students' student}}{{student.name}}{{/link-to}}<br>
+{{/each}}
+{{outlet}}
